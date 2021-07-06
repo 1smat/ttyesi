@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 a {
-  transition: all .8s ease;
+  transition: all 0.8s ease;
 }
 
 a:hover,
@@ -73,19 +73,19 @@ a:focus {
 .navbar-brand {
   background-color: #fff;
   color: var(--blue);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
 }
 .navbar-brand:hover {
   color: #fff;
   background-color: var(--blue);
   opacity: 0.9;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
 }
 
-.tm-navbar.scroll  {
-  color: #3496d8;;
+.tm-navbar.scroll {
+  color: #3496d8;
 }
 
 .tm-navbar.scroll {
@@ -93,14 +93,14 @@ a:focus {
 }
 
 .nav-item {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   list-style: none;
 }
 
 .tm-nav-link {
   background-color: #fff;
   color: var(--blue);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
 }
 
@@ -110,12 +110,10 @@ a:focus {
 .nav-link:hover {
   background-color: var(--blue);
   color: white;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
-} 
-.tm-navbar.scroll
-.tm-navbar.scroll .tm-nav-link.current
- {
+}
+.tm-navbar.scroll .tm-navbar.scroll .tm-nav-link.current {
   color: white;
 }
 
@@ -141,9 +139,9 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(../img/tthd2.jpg);
+  background-image: url(../img/bg3.png);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 800px;
   min-height: 375px;
   position: relative;
 }
@@ -173,9 +171,11 @@ a:focus {
 }
 
 .tm-hero-text-container {
+  color: var(--blue);
   width: 100%;
   height: 100%;
   display: flex;
+  font-weight: 900;
   flex-flow: column;
   justify-content: center;
 }
@@ -186,6 +186,7 @@ a:focus {
 }
 
 .tm-hero-title {
+  color: var(--blue);
   font-size: 3.5rem;
   text-shadow: 2px 2px 2px #333;
 }
@@ -213,18 +214,19 @@ a:focus {
 }
 
 .tm-down-arrow {
-  color: var(--blue);
+  color: #fff;
   cursor: pointer;
-  background: white;
+  background: var(--blue);
   border-radius: 50%;
   padding: 10px 22px 8px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
-  color: white;
-  background: var(--blue);
+  color: #fff;
+  background: rgb(17, 17, 182);
+  opacity: 0.8;
 }
 
 /* About */
@@ -236,7 +238,6 @@ a:focus {
   background: #3496d8;
   color: #fff;
 }
-
 
 /* Introduction */
 
@@ -394,7 +395,7 @@ figure.effect-honey figcaption::before {
   width: 100%;
   height: 10px;
   background: #3496d8;
-  content: "";
+  content: '';
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
 }
